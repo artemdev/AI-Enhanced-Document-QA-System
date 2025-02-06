@@ -7,9 +7,9 @@ services:
         - PLATFORM=linux/x86_64
     image: ${IMAGE_TAG}
     ports:
-      - "4000:4000"
+      - "4000:8080"
 
-      
+
   frontend:
     build:
       context: ./frontend
