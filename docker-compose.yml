@@ -3,21 +3,12 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-      args:
-        - PLATFORM=linux/x86_64
-    image: ${IMAGE_TAG}
     ports:
-      - "4000:8080"
-
+      - "4000:4000"
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-      args:
-        - PLATFORM=linux/x86_64
-    image: ${IMAGE_TAG}
     ports:
       - "8080:8080"
-    depends_on:
-      - backend
