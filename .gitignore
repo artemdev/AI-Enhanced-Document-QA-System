@@ -1,4 +1,1 @@
-frontend/deploy
-
-frontend/.env
-frontend/.env.production
+frontend-deploy
